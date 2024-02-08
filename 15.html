@@ -22,13 +22,14 @@
             height: auto;
             display: block;
             margin: 0 auto;
+            animation: pulse 1s infinite alternate;
         }
 
         .heart {
             position: absolute;
             width: 30px;
             height: auto;
-            animation: pulse 1s infinite alternate, move 5s infinite linear;
+            animation: move 5s infinite linear;
         }
 
         @keyframes pulse {
@@ -60,10 +61,9 @@
 </head>
 <body>
     <div id="container">
-        <img id="image" src="https://api.sparkasse.at/haystack/rest/advisors/public/150341/image?width=140" alt="Profile Image"
-            
+        <img id="image" src="https://api.sparkasse.at/haystack/rest/advisors/public/150341/image?width=140" alt="Profile Image">
         <img class="heart" style="--directionX: -1; --directionY: 1; top: 20px; left: 30px;" src="https://kaltrina.senad.me/heart.png" alt="Heart">
-        <img class="heart" style="--directionX: -1; --directionY: -1; top: 40px; left: 60px;" src="https://kaltrina.senad.me/heart.png" alt="Heart"
+        <img class="heart" style="--directionX: -1; --directionY: -1; top: 40px; left: 60px;" src="https://kaltrina.senad.me/heart.png" alt="Heart">
         <img class="heart" style="--directionX: 1; --directionY: -1; top: 60px; left: 30px;"  src="https://kaltrina.senad.me/heart.png" alt="Heart">
         <img class="heart" style="--directionX: 1; --directionY: 1; top: 80px; left: 60px;"   src="https://kaltrina.senad.me/heart.png" alt="Heart">
         <img class="heart" style="--directionX: -1; --directionY: 1; top: 100px; left: 30px;" src="https://kaltrina.senad.me/heart.png" alt="Heart">
@@ -72,8 +72,7 @@
         <img class="heart" style="--directionX: 1; --directionY: 1; top: 160px; left: 60px;"   src="https://kaltrina.senad.me/heart.png" alt="Heart">
         <img class="heart" style="--directionX: -1; --directionY: 1; top: 180px; left: 30px;" src="https://kaltrina.senad.me/heart.png" alt="Heart">
 
-<audio autoplay src="https://kaltrina.senad.me/Aurora_Lele_kaqurele.mp3"></audio>
-        
+        <audio autoplay src="https://kaltrina.senad.me/Aurora_Lele_kaqurele.mp3"></audio>
     </div>
 </body>
 </html>
